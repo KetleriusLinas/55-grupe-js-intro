@@ -1,0 +1,29 @@
+## JavaScript
+
+-   #kintamieji (atminties lasteles, duomenu tipai):
+    -   ~~tekstas (string)~~ - PRAEITA
+    -   ~~skaiciai (number)~~ - PRAEITA
+    -   ~~logines reiksmes (boolean)~~ - PRAEITA
+    -   sarasas (array)
+    -   objektas (object)
+    -   null
+    -   undefined
+-   #funkcijos (perpanaudojamas kodo blokas/logika):
+    -   ~~"paprasta"~~ - PRAEITA
+    -   rodykline
+    -   metodai:
+        -   string methods
+        -   ~~~number methods~~~
+        -   Math biblioteka
+        -   array methods
+        -   object methods
+-  #palyginimas:
+    -   if
+    -   ternary
+    -   switch
+-   #ciklas:
+    -   for
+    -   while
+    -   for-of
+    -   for-in
+-   #ivykiu stebejimas (event listeners)

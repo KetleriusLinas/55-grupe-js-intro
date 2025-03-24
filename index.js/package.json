@@ -1,0 +1,24 @@
+{
+    "name": "55-grupe-js-intro",
+    "version": "1.0.0",
+    "description": "Labas rytas, Lietuva! Ačiū! Ką tu? Ką vakare?",
+    "main": "index.js",
+    "scripts": {
+        "if": "node --watch ./js/5-if.js",
+        "boolean": "node --watch ./js/4-boolean.js",
+        "function": "node --watch ./js/3-function.js",
+        "string": "node --watch ./js/2-string.js",
+        "number": "node --watch ./js/1-number.js",
+        "mentore": "node --watch ./praktika/meginu.js",
+        "uzduotys": "node --watch ./praktika/uzduotys.js",
+        "ND": "node --watch ./praktika/ND.js",
+
+
+        "js": "node ./index.js",
+        "praktika": "node ./index.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "Rimantas (https://github.com/belauzas)",
+    "license": "MIT"
+}
