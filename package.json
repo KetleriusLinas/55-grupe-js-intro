@@ -10,7 +10,7 @@
         "function": "node --watch ./js/3-function.js",
         "string": "node --watch ./js/2-string.js",
         "number": "node --watch ./js/1-number.js",
-        "mentore": "node --watch ./praktika/meginu.js",
+        "standup": "node --watch ./praktika/standup.js",
         "uzduotys": "node --watch ./praktika/uzduotys.js",
         "ND": "node --watch ./praktika/ND.js",
 
