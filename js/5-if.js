@@ -59,5 +59,3 @@ else if (temp2 < 22) {
 else {
     console.log('Karsta')
 }
-
-//ND: 
