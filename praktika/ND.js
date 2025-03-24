@@ -319,7 +319,7 @@ if(k <= l) {
 } else {
     console.log('Bndyti dar karta');
 }
-// console.clear();
+console.clear();
 
 //--------------------------------Funkcijos----------------------------
 console.log('---------------Funkcijos---------------');
@@ -371,33 +371,25 @@ function skaitmenuKiekisSkaiciuje(kintamasis) {
 
   console.log('----------------GPT--------------------');
 
-//   function didziausiasSkaiciusSarase(sarasas) {
-//     // Patikriname, ar pateiktas kintamasis yra sąrašas (masyvas)
-//     if (!Array.isArray(sarasas)) {
-//         console.log("Pateikta netinkamo tipo reikšmė.");
-//         return;
-//     }
-    
-//     // Patikriname, ar sąrašas nėra tuščias
-//     if (sarasas.length === 0) {
-//         console.log("Pateiktas sąrašas negali būti tuščias.");
-//         return;
-//     }
-    
-//     // Inicijuojame kintamąjį didžiausiam skaičiui
-//     let didziausias = sarasas[0];
-    
-//     // Pereiname per visą sąrašą ir ieškome didžiausio skaičiaus
-//     for (let i = 1; i < sarasas.length; i++) {
-//         if (sarasas[i] > didziausias) {
-//             didziausias = sarasas[i];
-//         }
-//     }
-    
-//     // Gražiname didžiausią skaičių
-//     return didziausias;
+// function didziausiasSkaiciusSarase(kintmasis) {
+//     if (kintamasis !== string)
+//         console.log('Pateikta netinkamo tipo reikšmė.');
+//     return;
 // }
-// console.log(didziausiasSkaiciusSarase[1]);
-// console.log(didziausiasSkaiciusSarase[1, 2, 3]);
-// console.log(didziausiasSkaiciusSarase[1]);
-// console.log(didziausiasSkaiciusSarase[1]);
+// console.log(didziausiasSkaiciusSarase[]);
+
+// Sąrašas su skaičiais
+// let skaiciai = [1, 5, 3, 9, 2, 8];
+
+// // Kintamasis didžiausiam skaičiui saugoti
+// let didziausiasSkaicius = skaiciai[0];
+
+// // Naudojame for ciklą, kad pereitume per sąrašą
+// for (let i = 1; i < skaiciai.length; i++) {
+//     if (skaiciai[i] > didziausiasSkaicius) {
+//         didziausiasSkaicius = skaiciai[i];
+//     }
+// }
+
+// // Išvedame didžiausią skaičių
+// console.log("Didžiausias skaičius:", didziausiasSkaicius);

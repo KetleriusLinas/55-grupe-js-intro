@@ -10,43 +10,32 @@ Jei mokinys neišlaiko kurso, parašykite ar mokinys, gavęs vieną gerą įvert
 
 
 //----------------------------------------PASIBAIGTI-------------------------------------------------
-// const mokinys1 = [' Tadas', 8, 9, 10, 4, 7];
-// const mokinys2 = [' Rima', 8, 3, 5, 9, 7];
-// const mokinys3 = [' Gabija', 3, 3, 3, 3, 5];
+const mokinys1 = [' Tadas', 8, 9, 10, 4, 7];
+const mokinys2 = [' Rima', 8, 3, 5, 9, 7];
+const mokinys3 = [' Gabija', 3, 3, 3, 3, 5];
 
-// function mokinioVidurkis (mokinys) {
-//     console.log('Mokinio vardas:' + mokinys[0]);
-//     let vidurkis = (mokinys[1] + mokinys[2] + mokinys[3] + mokinys[4] + mokinys [5]) / 5;
-//     if (vidurkis >= 3.5) {
+function mokinioVidurkis (mokinys) {
+    console.log('Mokinio vardas:' + mokinys[0]);
+    let vidurkis = (mokinys[1] + mokinys[2] + mokinys[3] + mokinys[4] + mokinys [5]) / 5;
+    if (vidurkis >= 3.5) {
 
-//         console.log(mokinys[0] + ' islaike. Jo vidurkis:' + vidurkis);
-//     }
-// else {
-//     let vidurkisNaujas = ((vidurkis * 5) + 10) / 6;
-//     console.log(mokinys[0] + ' neislaike. Jo dabartinis vidurkis:' + vidurkis);
+        console.log(mokinys[0] + ' islaike. Jo/s vidurkis:' + vidurkis);
+    }
+else {
+    let vidurkisNaujas = ((vidurkis * 5) + 10) / 6;
+    console.log(mokinys[0] + ' neislaike. Jo dabartinis vidurkis:' + vidurkis);
 
-// if (vidurkisNaujas >= 3.5) {
-//     console.log(mokinis[0] + ' islaikytu kursa jeigu gautu viena desimtuka');
+if (vidurkisNaujas >= 3.5) {
+    console.log(mokinys[0] + ' islaikytu kursa jeigu gautu viena desimtuka');
     
 
-//         }
-//     }
-// }
+        }
+    }
+}
 
-// mokinioVidurkis(mokinys1);
-// mokinioVidurkis(mokinys2);
-// mokinioVidurkis(mokinys3);
-
-
-
-
-
-
-
-
-
-
-
+mokinioVidurkis(mokinys1);
+mokinioVidurkis(mokinys2);
+mokinioVidurkis(mokinys3);
 
 
 //2 užduotis - filmų rekomendacija:
