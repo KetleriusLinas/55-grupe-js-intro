@@ -18,10 +18,8 @@
         "multiply": "node --watch ./js/task/multiply.js",
         "marks-average": "node --watch ./js/task/marks-average.js",
 
+        "nd": "node --watch ./js/task/nd.js",
 
-
-
-        "ND": "node --watch ./praktika/ND.js",
 
 
         "js": "node ./index.js",
