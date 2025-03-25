@@ -333,17 +333,26 @@ console.log(tusciaFunkcija());
 console.log('------------------------------------');
 
 function daugyba(num1, num2) {
+    // if (a === 'number') {}
     const result = num1 * num2;
     return result;
 }
-const e = daugyba(2, 4);
+const e = daugyba(2, 4); // galima buvo iskart i console isvesti, teisingiau taip
 console.log(e);
+console.log(daugyba(-2, 4));
 
 const f = daugyba(4, 5);
 console.log(f);
+console.log(daugyba(-7, -4.3));
 
 const g = daugyba(5, 2);
 console.log(g);
+console.log(daugyba(-5, 0));
+
+
+console.log(daugyba('labas', -3));
+
+
 
 console.log('-----------------pasikartot-------------------');
 
