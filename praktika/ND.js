@@ -330,10 +330,29 @@ function tusciaFunkcija() {
 console.log(tusciaFunkcija());
 
 
-console.log('------------------------------------');
+console.log('----------------persidaryti--------------------');
 
 function daugyba(num1, num2) {
-    // if (a === 'number') {}
+// if (typeof num1 !== 'number')
+
+    if (typeof num1 !== 'number') {
+        return 'Pirmasis skaicius turi buti skaicius'
+    }
+    if (typeof num2 !== 'number') {
+        return 'antras skaicius turi buti skaicius'
+    }
+    if (isNaN = num1) {
+    return ' Pirmas parametras NaN';
+    }
+    if (isNaN = num2) {
+        return ' antras parametras NaN';
+        }
+    if (isFinite(num1) === false) {
+        return ' Pirmas parametras NaN';
+    }
+    if (isFinite(num2) === false) {
+        return ' antras parametras NaN';
+    }
     const result = num1 * num2;
     return result;
 }
@@ -349,36 +368,40 @@ const g = daugyba(5, 2);
 console.log(g);
 console.log(daugyba(-5, 0));
 
-
 console.log(daugyba('labas', -3));
-
+console.log(daugyba(3, 'vakaras'));
+console.log();
+console.log(daugyba (NaN, 5)); // tikrinam NaN
+console.log(daugyba (5, NaN));
+console.log(daugyba (NaN, NaN));
+console.log(daugyba (false, NaN));
 
 
 console.log('-----------------pasikartot-------------------');
 
-function skaitmenuKiekisSkaiciuje(kintamasis) {
-    // Patikriname, ar kintamasis yra skaičius
-    if (typeof kintamasis !== 'number' || isNaN(kintamasis)) {
-      console.log('Pateikta netinkamo tipo reikšmė.');
-      return; // Baigiame funkciją, jei tipas netinkamas
-    }
+// function skaitmenuKiekisSkaiciuje(kintamasis) {
+//     // Patikriname, ar kintamasis yra skaičius
+//     if (typeof kintamasis !== 'number' || isNaN(kintamasis)) {
+//       console.log('Pateikta netinkamo tipo reikšmė.');
+//       return; // Baigiame funkciją, jei tipas netinkamas
+//     }
   
-    // Skaičiuojame skaitmenų kiekį
-    let skaitmenuKiekis = kintamasis.toString().length;
+//     // Skaičiuojame skaitmenų kiekį
+//     let skaitmenuKiekis = kintamasis.toString().length;
   
-    // Grąžiname skaitmenų kiekį
-    return skaitmenuKiekis;
-  }
+//     // Grąžiname skaitmenų kiekį
+//     return skaitmenuKiekis;
+//   }
   
-  // Testavimas
-  console.log(skaitmenuKiekisSkaiciuje(5)); 
-  console.log(skaitmenuKiekisSkaiciuje(781)); 
-  console.log(skaitmenuKiekisSkaiciuje(37060123456));
-  console.log(skaitmenuKiekisSkaiciuje(true));
-  console.log(skaitmenuKiekisSkaiciuje("asd"));
-  console.log(skaitmenuKiekisSkaiciuje(NaN));
+//   // Testavimas
+//   console.log(skaitmenuKiekisSkaiciuje(5)); 
+//   console.log(skaitmenuKiekisSkaiciuje(781)); 
+//   console.log(skaitmenuKiekisSkaiciuje(37060123456));
+//   console.log(skaitmenuKiekisSkaiciuje(true));
+//   console.log(skaitmenuKiekisSkaiciuje("asd"));
+//   console.log(skaitmenuKiekisSkaiciuje(NaN));
 
-  console.log('----------------GPT--------------------');
+//   console.log('----------------GPT--------------------');
 
 // function didziausiasSkaiciusSarase(kintmasis) {
 //     if (kintamasis !== string)

@@ -15,6 +15,10 @@
         "uzduotys": "node --watch ./praktika/uzduotys.js",
         "adult": "node --watch ./js/task/adult.js",
         "text": "node --watch ./js/task/text-size.js",
+        "multiply": "node --watch ./js/task/multiply.js",
+        "marks-average": "node --watch ./js/task/marks-average.js",
+
+
 
 
         "ND": "node --watch ./praktika/ND.js",

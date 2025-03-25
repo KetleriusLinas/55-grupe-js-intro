@@ -9,7 +9,18 @@ NUMBER - skaiciai
 - sveikieji, desimtainiai
 - teigiami, neigiami
 - Infinity, -Infinity
-- NaN (skaiciaus tipo klaida)
+
+- NaN (skaiciaus tipo klaida) - nenormalus skaicius
+if (isNaN = (a))
+return ' Pirmas parametras NaN'
+if (isFinite(a) === false) {
+return ' Pirmas parametras NaN'
+}
+if ('' + b === 'NaN') {
+return ' Pirmas parametras NaN'
+
+}
+
 
 Aritmetiniai operatoriai:
 +, -, *, /, ** (kelimas laipsniu), % (dalybos liekana)
@@ -17,6 +28,7 @@ Aritmetiniai operatoriai:
 Aritmetiniai priskyrimo operatoriai:
 +=, -=, *=, /=, **= (kelimas laipsniu), %= (dalybos liekana)
 
+isFinite 
 */
 
 const a = 1;
