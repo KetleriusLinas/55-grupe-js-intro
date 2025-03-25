@@ -11,8 +11,10 @@
         "function": "node --watch ./js/3-function.js",
         "string": "node --watch ./js/2-string.js",
         "number": "node --watch ./js/1-number.js",
+        
         "standup": "node --watch ./praktika/standup.js",
         "uzduotys": "node --watch ./praktika/uzduotys.js",
+
         "adult": "node --watch ./js/task/adult.js",
         "text": "node --watch ./js/task/text-size.js",
         "multiply": "node --watch ./js/task/multiply.js",

@@ -59,14 +59,26 @@ console.log(vienasNamuoseFilmas);
 // console.log(d);
 
 
-// array - sarasai
-const masinos = ['bmw', 'audi', 'mersas'];
+// // array - sarasai
+// const masinos = ['bmw', 'audi', 'mersas'];
 
-console.log(masinos[1]);
+// console.log(masinos[1]);
 
-// verciu tipai yra skaiciai?
-const datos = [1824, 2004, 1874, 3659, 1588];
-
-
+// // verciu tipai yra skaiciai?
+// const datos = [1824, 2004, 1874, 3659, 1588];
 
 
+const skaiciai1 = [1, 2, 3];
+
+function addNum (sk) {
+    return (sk[0] + sk[1] + sk[2]);
+}
+
+function tellNum (sk) {
+console.log(sk[0]);
+}
+
+let suma = addNum(skaiciai1);
+console.log(addNum(skaiciai1));
+
+tellNum(skaiciai1);
