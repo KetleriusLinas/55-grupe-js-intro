@@ -4,7 +4,12 @@ string - tekstas, simboliu grandine.
 Tekstines reiksmes iniciavimas:
  - ' (vienguba kabute)
  - " (dviguba kabute)
- - 
+ - let k = 0;
+k = k +1;
+k += 1;
+k++; // kada padidints priies panaudojima ar po
+++k; // po panaudojimo
+
 
  Specialieji simboliai:
 - \ (privercia sekanti simboli buti spausdintinu)

@@ -1,5 +1,12 @@
 /* 
 ARRAY - sarasas, masyvas, listas
+
+let k = 0;
+k = k +1;
+k += 1;
+k++; // kada padidints priies panaudojima ar po
+++k; // po panaudojimo
+
 */
 
 const empty = [];

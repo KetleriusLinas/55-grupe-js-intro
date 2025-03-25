@@ -23,7 +23,7 @@ function mokinioVidurkis (mokinys) {
     }
 else {
     let vidurkisNaujas = ((vidurkis * 5) + 10) / 6;
-    console.log(mokinys[0] + ' neislaike. Jo dabartinis vidurkis:' + vidurkis);
+    console.log(mokinys[0] + ' neislaike. Jo/s dabartinis vidurkis:' + vidurkis);
 
 if (vidurkisNaujas >= 3.5) {
     console.log(mokinys[0] + ' islaikytu kursa jeigu gautu viena desimtuka');
@@ -41,5 +41,23 @@ mokinioVidurkis(mokinys3);
 //2 užduotis - filmų rekomendacija:
 
 // Susikurkite bent 5 sąrašo tipo kintamuosius, kurių pirmas narys yra filmo pavadinimas, antras narys yra filmo žanras, o trečias narys yra skaičiaus tipo filmo įvertis.
+
+
 // Susikurkite 2 kintamuosius kurie -pirmas nurodo jūsų mėgstamą žanrą ir antras nurodo jūsų norimą matyti filmo įvertį.
 // Padarykite funkciją, kuri iš pasirinktų 3 filmų, pagal jūsų norimą žanrą ir įvertį išveda į console kokie filmai jums patiktų. Jei joks filmas netinka, turi tai pranešti.
+
+// let filmai = [
+//     ["Reples", "Dokumentika", 8.4],
+//     ['Atsuktuvas', "Veiksmo", 9.0],
+//     ['Lietvamzdis', "Drama", 8.8],
+//     ["Irklas", "Komedija", 8.7],
+//     ['Rastas', 'Detektyvas', 9.2]
+//   ];
+
+//   const megstamasZanras = 'Veiksmo';
+//   const norimasIvertinimas = 8.7;
+
+//   function rekomenduotiFilmus (filmai, zanras, ivertinimas) {
+//     let tinkantisFilmas = filmai;
+
+//   }
