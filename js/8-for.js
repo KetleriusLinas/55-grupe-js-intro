@@ -108,7 +108,7 @@ console.log('-------------------');
 
 
 
-const names = ['Jonas', 'Maryte', 'Petras', 'Ona'];
+const names = ['Jonas', 'Maryte', 'Petras', 'Ona', 'Virginijus'];
 
 //sugeneruoti studento vardas yra:
 
@@ -126,3 +126,5 @@ for (i = 0; i < names.length; i++) {
     console.log(s)
 }
 console.log('-------------------');
+
+
