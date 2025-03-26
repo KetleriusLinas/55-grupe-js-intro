@@ -75,3 +75,54 @@ console.log('-------------------');
 for (let i = 0; i < 10; i++) {
     console.log(`${n} * ${i} = ${n * i}`);
 }
+console.clear();
+// skaicius istraukti is  array su for ciklu
+const marks = [10, 2, 8, 6, 4];
+
+let sum = 0;
+// rankinis budas
+sum +=marks[0];
+sum +=marks[1];
+sum +=marks[2];
+sum +=marks[3];
+sum +=marks[4];
+
+console.log(sum);
+
+// let sum2 = 0;
+// // susumuoti skaiciai  su for ciklu
+// for(let i = 0; i < 5; i++) {
+//     console.log('index', i, '--->', marks[i]);
+//     sum2 += marks[i];
+// }
+// console.log(sum2);
+
+// automatinis budas jei keisis array (dides ar mazes nesvarbu)
+let sum2 = 0;
+for(let i = 0; i < marks.length; i++) {
+    console.log('index', i, '--->', marks[i]);
+    sum2 += marks[i];
+}
+console.log(sum2);
+console.log('-------------------');
+
+
+
+const names = ['Jonas', 'Maryte', 'Petras', 'Ona'];
+
+//sugeneruoti studento vardas yra:
+
+for(let i = 0; i < names.length; i++) {
+    const s = `studento vardas yra: ${names[i]}.`
+    console.log(s);
+}
+console.log('-------------------');
+
+// "Vardas" sudarytas yra is N raidziu.
+
+for (i = 0; i < names.length; i++) {
+    const name = names[i];
+    const s = `Vardas "${name}" sudarytas yra is ${name.length} raidziu.`
+    console.log(s)
+}
+console.log('-------------------');
