@@ -17,7 +17,7 @@
         "uzduotys": "node --watch ./praktika/uzduotys.js",
         "workshop": "node --watch ./praktika/workshop.js",
         "darbas1": "node --watch ./praktika/darbas1.js",
-        "funkcijos+if": "node --watch ./praktika/funkcijos+if.js",
+        "if+array": "node --watch ./praktika/if+array.js",
 
 
         "digit-count": "node --watch ./js/task/digit-count.js",

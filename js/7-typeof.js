@@ -4,7 +4,7 @@ TYPEOF - duomenu tipo nustatymo operatorius
 */
 
 function sum(a, b) {
-    return a+ b;
+    return a + b;
 }
 
 console.log(typeof 5);

@@ -31,7 +31,7 @@ let array3 = [2, 4, 6, 7, 9, 10];
 for (let i = 0; i < array3.length; i++) {
     if (array3[i] % 2 === 0) {
         console.log(`Taip, ${array3[i]} skaiciai yra lyginiai`);
-        // break; // jei randa lygini sustabdo masyva. Isveda console tik viena karta.
+        // break; // sustabdo cikla po pirmo if ivygdimo
     }
 };
 console.log('----------5--------');
@@ -70,5 +70,13 @@ console.log('---------8---------');
         
 // . Patikrinkite, ar sąraše yra tik teksto tipo kintamieji
 // a. Pavyzdys: Patikrinkite, ar [„obuolys“, ‚bananas‘, „vyšnia“] yra tik tekstai.
+let array7 = ['Obuolys', 'bananas', 'vysnia', 10, 5, 84, -24];
+        for (let i = 0; i < array7.length; i++) {
+            if (typeof array7[i] === 'string')
+                console.log('Taip, teksto tipo kintamieji')
+        }; 
 
-let array7 = ['Obuolys', 'bananas', 'vysnia'];
+        
+        // }; if (typeof array7[i] !== 'string') {
+        //     console.log('Ne, kintamieji kito tipo')
+        // };
