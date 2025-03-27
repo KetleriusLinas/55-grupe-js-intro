@@ -319,8 +319,112 @@ if(k <= l) {
 } else {
     console.log('Bndyti dar karta');
 }
-// console.clear();
+console.clear();
+console.log('---------------ciklai---------------');
 
+//--------------------------------ciklai----------------------------
+
+// tokie ciklai sunaudoja daug resursu kompo (uzdavinys teisingas bet praktiskai nera optimalus)
+// ilgai skaiciuos
+function intervalSum (start, end) {
+    let sum = 0;
+
+for (let i = start; i <= end; i++) {
+    sum += i;
+}
+
+    return sum;
+}
+console.log(intervalSum(0, 0));
+console.log(intervalSum(0, 4));
+console.log(intervalSum(0, 100));
+console.log(intervalSum(-50, 50));
+console.log(intervalSum(-70, 30));
+console.log(intervalSum(574, 815));
+console.log('-----------------------------');
+
+function stringReverse(text) {
+    let result = ' ';  // isikelti if patikrinima ar cia string tipas
+// 1 sprendimo budas
+    // logika : text -> text
+    for (let i = text.length - 1; i >= 0; i--) {
+        result += text[i];
+    }
+    return result;
+}
+
+console.log (stringReverse('abdcefgh'));
+console.log (stringReverse('sula'));
+console.log (stringReverse('zvutsrponm'));
+console.log (stringReverse('hgfedcba'));
+console.log (stringReverse('sachmatai'));
+console.log (stringReverse('saskes'));
+
+// let abc = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'r', 's', 't', 'u', 'v', 'z'];
+
+// let atvirkstine = '';
+// let normali = '';
+
+// for (let i = 0; i < abc.length; i++) { 
+//     normali += abc[i];
+// }
+
+// for (i = abc.length - 1; i >= 0; i--) {  gerai cia tiesiog nereikejo array.
+//     atvirkstine += abc[i];
+
+// }
+// console.log(normali);
+// console.log(atvirkstine);
+console.log('-----------------------------');
+
+function intervalDalyba (start, end) { 
+    let count = 0;
+    const trys = 3;
+
+    for (let i = start; i <= end; i++) {
+        if ( i % trys === 0){
+            count++;
+}
+}
+    return `Skaičių intervale tarp ${start} ir ${end}, besidalijančių be liekanos skaiciu iš ${trys} yra ${count} vienetai.`;    
+}
+console.log(intervalDalyba(0, 11));
+console.log(intervalDalyba(8, 31));
+console.log(intervalDalyba(-18, 18));
+console.log('');
+
+function intervalDalyba1 (start, end) { 
+    let count1 = 0;
+    const penki = 5;
+
+    for (let i = start; i <= end; i++) {
+        if ( i % penki === 0){
+            count1++;
+}
+}
+    return `Skaičių intervale tarp ${start} ir ${end}, besidalijančių be liekanos skaiciu iš ${penki} yra ${count1} vienetai.`;    
+}
+
+console.log(intervalDalyba1(0, 11));
+console.log(intervalDalyba1(8, 31));
+console.log(intervalDalyba1(-18, 18));
+console.log('');
+function intervalDalyba2 (start, end) { 
+    let count2 = 0;
+    const septyni = 7;
+
+    for (let i = start; i <= end; i++) {
+        if ( i % septyni === 0){
+            count2++;
+}
+}
+    return `Skaičių intervale tarp ${start} ir ${end}, besidalijančių be liekanos skaiciu iš ${septyni} yra ${count2} vienetai.`;    
+}
+
+console.log(intervalDalyba2(0, 11));
+console.log(intervalDalyba2(8, 31));
+console.log(intervalDalyba2(-18, 18));
+console.clear();
 //--------------------------------Funkcijos----------------------------
 console.log('---------------Funkcijos---------------');
 
@@ -330,65 +434,34 @@ function tusciaFunkcija() {
 console.log(tusciaFunkcija());
 
 
-console.log('----------------persidaryti--------------------');
+console.log('-----------------------------');
 
 function daugyba(num1, num2) {
-    // if (typeof num1 !== 'number')
-    
-        if (typeof num1 !== 'number') {
-            return 'Pirmasis skaicius turi buti skaicius';
-        }
-        if (typeof num2 !== 'number') {
-            return 'antras skaicius turi buti skaicius';
-        }
-        if (isNaN (num1)) {
-        return ' Pirmas parametras NaN';
-        }
-        if (isNaN (num2)) {
-            return ' antras parametras NaN';
-            }
-        if (isFinite(num1) === false) {
-            return ' Pirmas parametras boolean';
-        }
-        if (isFinite(num2) === false) {
-            return ' antras parametras boolean';
-        }
-        if (num1 === Infinity || num1 === -Infinity) {
-            return 'Pirmasis skaicius negali begalybe';
-        }
-        if (num2 === Infinity || num2 === -Infinity) {
-            return 'antras skaicius neagali begalybe';
-        }
         const result = num1 * num2;
         return result;
-        // return num1 * num2;
     }
-    console.log(daugyba(2, 4));
-    console.log(daugyba(-2, 4));
-    console.log(daugyba(4, 5));
-    console.log(daugyba(-7, -4.3));
-    
-    console.log(daugyba(5, 2));
-    console.log(daugyba(-5, 0));
-    
-    console.log(daugyba('labas', -3));
-    console.log(daugyba(3, 'vakaras'));
-    console.log();
-    console.log(daugyba (NaN, 5)); // tikrinam NaN
-    console.log(daugyba (5, NaN));
-    console.log(daugyba (NaN, NaN));
-    console.log(daugyba (false, NaN));
-    
-    
-    console.log(daugyba (2.84, -3.5));
-    console.log(daugyba (2.99, -5));
-    console.log(daugyba (2, 3.5));
-    console.log(daugyba (Infinity, 3));
-    console.log(daugyba (-Infinity, 2));
-    console.log(daugyba (Infinity, -Infinity));
-    console.log(daugyba (5, 3.5));
+console.log(daugyba(4, 12));
+console.log(daugyba(12, 11));
+console.log(daugyba(11, 4));
+console.log('-----------------------------');
 
-console.log('-----------------pasikartot-------------------');
+
+function skaitmenuKiekisSkaiciuje(a) {
+    if (typeof a !== 'number' || isNaN(a)) {
+        return 'Pateikta netinkamo tipo reiksme';
+    }
+    const skaitmenuKiekis1 = a.toString().length;
+        return skaitmenuKiekis1;
+
+}
+console.log(skaitmenuKiekisSkaiciuje(5));
+console.log(skaitmenuKiekisSkaiciuje(781));
+console.log(skaitmenuKiekisSkaiciuje(578913256334));
+console.log(skaitmenuKiekisSkaiciuje(true));
+console.log(skaitmenuKiekisSkaiciuje("asd"));
+console.log(skaitmenuKiekisSkaiciuje(NaN));
+
+// console.log('-----------------pasikartot-------------------');
 
 // function skaitmenuKiekisSkaiciuje(kintamasis) {
 //     // Patikriname, ar kintamasis yra skaičius

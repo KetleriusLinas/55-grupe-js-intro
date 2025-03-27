@@ -15,7 +15,10 @@
         
         "standup": "node --watch ./praktika/standup.js",
         "uzduotys": "node --watch ./praktika/uzduotys.js",
+        "workshop": "node --watch ./praktika/workshop.js",
 
+        "interval-count": "node --watch ./js/task/interval-count.js",
+        "string-reverse": "node --watch ./js/task/string-reverse.js",
         "interval-sum": "node --watch ./js/task/interval-sum.js",
         "multitable": "node --watch ./js/task/multi-table.js",
         "adult": "node --watch ./js/task/adult.js",
