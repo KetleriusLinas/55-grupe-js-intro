@@ -70,13 +70,13 @@ console.log(`2 užduotis - filmų rekomendacija:`);
 // function filmoPasiulymas (filmasA, filmasB, filmasC, zanras, ivertinimas){
 //     let arYraFilmas = false;
 
-//     if(filmasA[2] >= balas && filmasA[1] == zanras) {
+//     if(filmas1[2] >= balas && filmas11[1] == zanras) {
 //         arYraFilmas = true;
-//         console.log('Jums tiktu:' + filmasA[0]);
+//         console.log('Jums tiktu:' + filmas1[0]);
 //         arYraFilmas = true;
 //     }
-//     if(filmasB[2] >= balas && filmasA[1] == zanras) {
-//         console.log('Jums tiktu:' + filmasB[0]);
+//     if(filmas2[2] >= balas && filmas1[1] == zanras) {
+//         console.log('Jums tiktu:' + filmas2[0]);
 //     }
 
 //     if(arYraFilmas == false) {
@@ -89,3 +89,46 @@ console.log(`2 užduotis - filmų rekomendacija:`);
 // console.log(filmas3);
 // console.log(filmas4);
 // console.log(filmas5); 
+
+
+
+// 
+
+const filmas11 = ['greitis', 'veiksmo', 7.5]
+const filmas12 = ['pjūklas', 'siaubo', 6]
+const filmas13 = ['klyksmas', 'siaubo', 8]
+const filmas14 = ['narnija', 'fantazijos', 6]
+const filmas15 = ['baltija', 'istorinis', 6]
+
+const ManoBalas = 6;
+const ManoZanras = 'siaubo';
+const DraugoBalas = 9;
+
+function filmoPasiulymas (filmasA, filmasB, filmasC, balas, zanras)
+{
+    let ArYraFilmas = false;
+
+    if (filmasA[2]>=balas && filmasA[1] == zanras)
+    {
+        console.log ("Jums tiktų: " + filmasA[0]);
+        ArYraFilmas = true;
+    }
+    if (filmasB[2]>=balas && filmasB[1] == zanras)
+    {
+        console.log ("Jums tiktų: " + filmasB[0]);
+        ArYraFilmas = true;
+    }
+    if (filmasC[2]>=balas && filmasC[1] == zanras)
+    {
+        console.log ("Jums tiktų: " + filmasC[0]);
+        ArYraFilmas = true;
+    }
+
+    if(ArYraFilmas == false)
+    {
+        console.log('Jums tinkamų filmų nėra')
+    }
+}
+
+
+filmoPasiulymas(filmas11, filmas12, filmas13,  ManoBalas, ManoZanras);

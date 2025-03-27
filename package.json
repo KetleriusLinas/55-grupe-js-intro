@@ -16,7 +16,11 @@
         "standup": "node --watch ./praktika/standup.js",
         "uzduotys": "node --watch ./praktika/uzduotys.js",
         "workshop": "node --watch ./praktika/workshop.js",
+        "darbas1": "node --watch ./praktika/darbas1.js",
+        "funkcijos+if": "node --watch ./praktika/funkcijos+if.js",
 
+
+        "digit-count": "node --watch ./js/task/digit-count.js",
         "interval-count": "node --watch ./js/task/interval-count.js",
         "string-reverse": "node --watch ./js/task/string-reverse.js",
         "interval-sum": "node --watch ./js/task/interval-sum.js",
