@@ -50,3 +50,40 @@
 // } else {
 //     console.log ('padarete klaida');
 // }
+
+
+
+
+// kvadratu ir kubu pakelti
+
+
+// for (let i = 0; i <= 5; i++) {
+//     console.log(i + ' '  + 'Skaiciai kvadratu ' + i * i);
+// }
+
+
+
+// for (let i = 0; i <5; i++){
+//     let a = '*';
+//     console.log(a);
+//     for (let n = i; n >= 1; n--)
+//         a = a + '*';
+// }
+
+
+// for (let i = 0; i <= 5; i++) {
+//     console.log(i + ' '  + 'Skaiciai kvadratu ' + i * i);
+// }
+
+// fibonacio seka
+
+// let x = 1;
+// let y = 2;
+// let z = 0;
+
+// for ( let i 1; i <= 10, i++) {
+//     if (i === 1) {
+//         console.log(x);
+//     } else if
+// }
+

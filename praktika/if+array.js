@@ -67,16 +67,36 @@ let array6 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
         };
 
 console.log('---------8---------');
-        
-// . Patikrinkite, ar sąraše yra tik teksto tipo kintamieji
-// a. Pavyzdys: Patikrinkite, ar [„obuolys“, ‚bananas‘, „vyšnia“] yra tik tekstai.
-let array7 = ['Obuolys', 'bananas', 'vysnia', 10, 5, 84, -24];
+
+let array7 = ['Obuolys', 'bananas', 'vysnia', 10, -5, true];
         for (let i = 0; i < array7.length; i++) {
             if (typeof array7[i] === 'string')
                 console.log('Taip, teksto tipo kintamieji')
-        }; 
+            else {
+            console.log('Ne, kito tipo kintamieji')
+        };
+    };
+    console.log('---------------------9-------------------');
 
-        
-        // }; if (typeof array7[i] !== 'string') {
-        //     console.log('Ne, kintamieji kito tipo')
-        // };
+let array8 = [2, 5, 12, 4, 15, 20, 55, 18];
+let bigNum = array8[0];
+let isvestasUzrasas = false;
+
+    for (let i = 0; i <= array8.length; i++) {
+        if (array8[i] > bigNum) {
+            bigNum = array8[i];
+        } if (bigNum > 10 && !isvestasUzrasas) {
+           console.log(`Taip, didziausias skaicius yra daugiau nei 10.`)
+            isvestasUzrasas = true; // nustatome kad console.log buvo jau isesta ir sustabdo isvedimus
+        };
+    };
+    console.log ('Didziausias skaicius yra:' + ' ' + bigNum); 
+
+    console.log('--------------------10----- nesupratau--------------');
+
+// visai nesupratau sito.
+let array9 = [2, 2, 2, 5, 6, 7, 2, 9, 8, 2, 7, 2];
+let arrayNumbers = array9.filter(num => num === 2); // pereina per masyva ir vienodas reiksmes isrenka
+    if (arrayNumbers.length > 3) { 
+        console.log(`Taip siame masyve yra daugiau skaicius 2 elementu, net ${arrayNumbers.length}`);
+    };

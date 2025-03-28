@@ -16,6 +16,7 @@
         "standup": "node --watch ./praktika/standup.js",
         "uzduotys": "node --watch ./praktika/uzduotys.js",
         "workshop": "node --watch ./praktika/workshop.js",
+        "kartojimas": "node --watch ./praktika/kartojimas.js",
         "darbas1": "node --watch ./praktika/darbas1.js",
         "if+array": "node --watch ./praktika/if+array.js",
 
