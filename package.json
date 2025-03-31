@@ -19,8 +19,9 @@
         "kartojimas": "node --watch ./praktika/kartojimas.js",
         "darbas1": "node --watch ./praktika/darbas1.js",
         "if+array": "node --watch ./praktika/if+array.js",
+        "uzduotys+if": "node --watch ./praktika/uzduotys+if.js",
 
-
+        "biggestNumber": "node --watch ./js/task/biggestNumber.js",
         "digit-count": "node --watch ./js/task/digit-count.js",
         "interval-count": "node --watch ./js/task/interval-count.js",
         "string-reverse": "node --watch ./js/task/string-reverse.js",
