@@ -1,7 +1,7 @@
 
 // bazinis algoritmas (veikia)
 function biggestNumber (list) { {
-    // typeof sitoj vietoj netinka. Reikia tikrinti kad sarasas gautu tinkamas reiksmes
+    // typeof sitoj vietoj netinka. Reikia tikrinti kad sarasas gautu tinkamas reiksmes????/
     // sitoj salygoj gali praeiti tik array
     // jei NE (!) array tada nepraeina, arba sarasas lygus 0 irgi netinka.
     if (!Array.isArray(list) || list.length === 0)

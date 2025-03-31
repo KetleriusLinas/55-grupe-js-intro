@@ -19,3 +19,6 @@ kiekviena karta ciklui sukantis prideda i
 3 + 3 = 6
 6 + 4 = 10
 ........
+
+
+isNaN - tikrina ar tai yra skaicius.
