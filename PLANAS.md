@@ -4,21 +4,21 @@
     -   ~~tekstas (string)~~ - PRAEITA
     -   ~~skaiciai (number)~~ - PRAEITA
     -   ~~logines reiksmes (boolean)~~ - PRAEITA
-    -   sarasas (array)
-    -   objektas (object)
-    -   null
-    -   undefined
+    -   ~~sarasas (array)~~ - PRAEITA
+    -   ~~objektas (object)~~ - PRAEITA
+    -   ~~null~~ - PRAEITA (reiksme neegzistuoja, bet mes kitaip ja gauti/paskaiciuoti)
+    -   ~~undefined~~ - PRAEITA (reiksme neegzistuoja, kai kreipiesi i atminti ir joje nera duomens)
 -   #funkcijos (perpanaudojamas kodo blokas/logika):
     -   ~~"paprasta"~~ - PRAEITA
     -   rodykline
     -   metodai:
         -   string methods
-        -   ~~~number methods~~~
+        -   number methods
         -   Math biblioteka
         -   array methods
         -   object methods
 -  #palyginimas:
-    - ~~if~~
+    - ~~if~~ - PRAEITA
     -   ternary
     -   switch
 -   #ciklas:
