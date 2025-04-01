@@ -147,3 +147,47 @@ console.log('---------------7--------------');
 // a. Padaryti su sąrašo (array) tipo kintamuoju
 // b. Padaryti su keliais skaičių tipo kintamaisiais
 
+// P = a * b;
+
+function staciakampioPlotas (a, b) {
+const result = a * b;
+        return result;
+}
+console.log(staciakampioPlotas(5, 7));
+console.log(staciakampioPlotas(7, 10));
+console.log(staciakampioPlotas(2, 6));
+console.log('---------pabaigti riekia masyvu-------------');
+
+console.log('---------------8--------------');
+
+// 8. Sukurkite funkciją, kuri tikrina, ar skaičius dalijasi iš 3.
+
+function dalijasiIsTriju (number) {
+    if (typeof number !== 'number' || !isFinite(number)) {
+        return `Netinkama reiksme`;    
+    }
+    if (number == 0) {
+        return `0, nesidalija`
+    }
+    if  (number % 3 === 0) {
+        return `Skaicius: ${number} dalijasi`;
+    }else {
+        return `Skaicius: ${number} nesidalija`;
+    }
+}
+
+console.log(dalijasiIsTriju(0));
+console.log(dalijasiIsTriju(5));
+console.log(dalijasiIsTriju(-18));
+console.log(dalijasiIsTriju(12));
+// console.log(dalijasiIsTriju(11.5));
+// console.log(dalijasiIsTriju('abc'));
+// console.log(dalijasiIsTriju(true));
+// console.log(dalijasiIsTriju(Infinity));
+
+console.log('---------------9--------------');
+
+// Sukurkite funkciją, kuri tikrina, ar teksto tipo kintamasis prasideda raide 'a'.
+
+//startsWith -- kuo prasideda zodis/
+
