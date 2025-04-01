@@ -16,7 +16,7 @@
         "string": "node --watch ./js/2-string.js",
         "number": "node --watch ./js/1-number.js",
 
-
+        "funkcijos+for2": "node --watch ./praktika/funkcijos+for2.js",
         "funkcijos+for": "node --watch ./praktika/funkcijos+for.js",
         "standup": "node --watch ./praktika/standup.js",
         "uzduotys": "node --watch ./praktika/uzduotys.js",
