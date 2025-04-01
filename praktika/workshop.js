@@ -87,3 +87,4 @@
 //     } else if
 // }
 
+console.log('sveikas, juozai');
