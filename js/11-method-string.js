@@ -213,3 +213,104 @@ console.log('pomidoras'.slice(3, -3)); // ido --- abi puses nupjauna
 // teigiamas skaicius pjauna is pradzios, minusinis is galo
 console.log('pomidoras'.slice(-4)); // oras --- paskutines 4 raides nupjauna
 console.log('pomidoras'.slice(-6, -2)); // idor --- nuo mazesnio iki didesnio einama.
+console.clear();
+
+console.log('---------trim------------');
+// trim
+// naikina tik is priekio ir tik is galo space'us (tarpus) , per viduri ne
+console.log('pomidoras'.trim());
+console.log(`"${'     pomidoras'.trim()}"`); // panaikino tarpus trim'as
+console.log(`"${'pomidoras         '.trim()}"`); // same
+console.log(`"${'     pomidoras     '.trim()}"`); // panaikino
+console.log(`"${'     pomidoras   labas     '.trim()}"`); // per viduri tarpus palieka
+
+// mazai naudojami, labiau naudojama paprasta .trim
+console.log(`"${'     pomidoras   labas     '.trimEnd()}"`); // nutrina tik gala
+console.log(`"${'     pomidoras   labas     '.trimStart()}"`); // nutrina tik prieki
+
+console.log('---------split------------');
+// split--- splitina zodzius/tekstus
+
+const t1 = 'zodis';
+const t1Parts = t1.split();
+const t1Parts2 = t1.split('o'); // kerpa zodi sioja vietoje ir iskerpa raide
+const t1Parts3 = t1.split('d'); // tekste kerpa sioje vietoje kur raide d ir iskerpa ja ir padalina
+
+const t2 = 'kultivatorius';
+const t2Parts = t2.split('t'); // kul..iva...orius -- isplitina
+console.log(t2Parts); 
+
+console.log(t1Parts);
+console.log(t1Parts2);
+console.log(t1Parts3);
+
+// naudingas metodas
+const t3 = 'Labas rytas Lietuva';
+console.log(t3);
+const t3Parts = t3.split(' ');
+console.log(t3Parts);
+
+
+console.log('duona'.split('o')); // du,...na
+console.log('duona'.split('u')); // d..ona
+console.log('duona'.split('d')); // ' '...uona  --- skelia per d ir po kaire nebelieka teksto
+console.log('duona'.split('n'));
+
+// irasykite praleistas raides... (PROJEKTAS) ??? tik mintis
+console.log('ana'.split('a')); //''...'n'...''
+
+console.log('vasara'.split('a')); // 
+console.log('vasara'.split('')); // isprintina pavienes raides 'v', 'a', 's', 'a', 'r', 'a'
+console.log(''.split('')); // tuscia array'u spausdina
+
+
+const t4 = 'labas. Ka tu. Ka tu veiki.';
+const sentenceCount = t4.split('.').length - 1; // isskaiciavom sakiniu kieki. gavom 4 ir tada -1 ir teisingas ats. (kodel dar nezinau)
+
+console.log(sentenceCount);
+
+console.log('pomidoras'.split('dor')); // galima splitint ir per kelis simbolius tik kad eitu jie is eiles.
+
+console.log('---------charCodeAt(0)------------');
+// charCodeAt
+// asci code ?? kompo abecele, vieta kurioje abeceles vietoje yra sis simbolis
+console.log('A'.charCodeAt(0)); // masininis kodas 65
+console.log('a'.charCodeAt(0)); // masininis kodas 97
+
+if ('A' > 'a') {
+    console.log ('daugiau');
+} else {
+    console.log('maziau');
+};
+
+if ('labas' > 'iki') {
+    console.log ('daugiau');
+} else {
+    console.log('maziau');
+};
+// asci code ?? kompo abecele, vieta kurioje abeceles vietoje yra sis simbolis
+console.log('l'.charCodeAt(0)); // 108
+console.log('i'.charCodeAt(0)); // 105
+
+// is masininio kodo galima suzinoti koks simbolis 
+const s1 = String.fromCharCode(65);
+console.log(s1);
+
+const s2 = String.fromCharCode(260);
+console.log(s2);
+
+const s3 = String.fromCharCode(2600);
+console.log(s3);
+
+const s4 = String.fromCharCode(26000);
+console.log(s4);
+
+const s5 = String.fromCharCode(9845);
+console.log(s5);
+
+const s6 = String.fromCharCode(9875);
+console.log(s6);
+
+const s7 = String.fromCharCode(7878);
+console.log(s7);
+
