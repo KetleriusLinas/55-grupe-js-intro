@@ -18,7 +18,7 @@ function biggestNumber (list) { {
     for (let i = 0; i < list.length; i++) {
         // jei normalus skaicius       arba     normali reiksme
         if (typeof list[i] !== 'number' || !isFinite(list[i])) {
-            continue;
+            continue; // einam prie sekancio nario. ciklas daro sekancia interacija
         }
         if (list[i] > biggest){
             biggest = list[i];
