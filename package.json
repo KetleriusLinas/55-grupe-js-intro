@@ -29,6 +29,7 @@
         "uzduotys+if": "node --watch ./praktika/uzduotys+if.js",
         "uzduotys+funkcijos": "node --watch ./praktika/uzduotys+funkcijos.js",
 
+        "money-format": "node --watch ./js/task/money-format.js",
         "valid-name": "node --watch ./js/task/valid-name.js",
         "biggestNumber": "node --watch ./js/task/biggestNumber.js",
         "digit-count": "node --watch ./js/task/digit-count.js",
