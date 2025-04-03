@@ -83,3 +83,23 @@ console.log(parseFloat('-5.-5'));
 console.log(parseFloat('--55'));
 console.log(parseFloat('+5-5'));
 console.log('--------toFixed----------');
+
+//  "paiema skaicius po kablelio kiek nustatai" matomai
+const a = 12.3456789;
+console.log(a);
+console.log(typeof a);
+// pakeite skaiciu i string tipa:
+const b = a.toFixed(4);
+console.log(b);
+console.log(typeof b);
+// atkeite string tipa i number tipa
+const c = parseFloat(b);
+console.log(c);
+console.log(typeof c);
+
+
+console.log(12.3456789.toFixed(2));
+console.log(3.14.toFixed(2));
+console.log(3.14.toFixed(4));
+console.log(3.14.toFixed(6));
+
