@@ -87,4 +87,14 @@
 //     } else if
 // }
 
-console.log('sveikas, juozai');
+// console.log('sveikas, juozai');
+
+function greet(name){
+    if(name === "Johnny") {
+      return "Hello, my love!";
+  } else {
+    return "Hello, " + name + "!";
+  }
+}
+console.log(greet('Vilma'));
+console.log(greet('Johnny'));
