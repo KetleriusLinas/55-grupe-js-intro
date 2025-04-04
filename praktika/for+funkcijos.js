@@ -53,14 +53,22 @@ console.log('---------------7----------------');
 // vardas - ’ console log eilutės pradžioje
 
 let vardai = ['Petras', 'Jonas', 'Algis'];
-for (let i = 0; i < vardai.length; i++) {
+    for (let i = 0; i < vardai.length; i++) {
     console.log(`Mano vardas: ${vardai[i]}`);
 }
 console.log('---------------8----------------');
 // Parašykite for ciklą, kuris sudėtų visus sąrašo skaitinius elementus
-let skaitiniaiElementai = [2, 8, 'abc', -1, 'op', 9, 5, 'gg'];
-for (let i = 0; i < 5; i++) {
-    if (skaitiniaiElementai !== 'number') {
-        
+let suma = 0;
+let elementai = [2, 8, 'abc', -1, 'op', 9, 5, 'gg'];
+let skaitiniaiElementai = [];
+    for (let i = 0; i < elementai.length; i++) {
+    if (typeof elementai[i] === 'number') {
+        skaitiniaiElementai.push(elementai[i]);
     }
 }
+     for (let i = 0; i < skaitiniaiElementai.length; i++){
+    suma += skaitiniaiElementai[i];
+}
+console.log(skaitiniaiElementai, suma);
+console.log('-----padarei klaida kad darei cikla (for), cikle(for)---');
+
