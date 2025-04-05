@@ -130,3 +130,21 @@ for(i = 0; i < 30; i++) {
 }
 console.log (nelyginiai);
 // console.log (1+3+5+7+9+11+13+15+17+19+21+23+25+27+29);
+console.clear();
+console.log('---------------15----------------');
+// Parašykite for ciklą, kuris į console išvestų skaičius nuo 20 iki 10
+
+for (let i = 20; i >= 10; i--){
+    console.log(i);
+}
+console.log('---------------16----------------');
+// . Parašykite for ciklą, kuris į console išvestų sąrašo RaidėsAtbulai [ ‘s’, ‘a’, ‘b’, ‘a’, ‘L’]
+// elementus vienas po kito nuo galo iki pradžios
+
+let raidesAtbulai = ['s', 'a', 'b', 'a', 'L'];
+let sujungtasZodis = [];
+    for (let i = raidesAtbulai.length - 1; i >= 0; i--){
+        sujungtasZodis += raidesAtbulai[i];
+        console.log (raidesAtbulai[i]);
+}
+console.log(sujungtasZodis);
