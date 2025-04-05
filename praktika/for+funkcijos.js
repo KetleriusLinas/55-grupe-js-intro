@@ -146,5 +146,6 @@ let sujungtasZodis = [];
     for (let i = raidesAtbulai.length - 1; i >= 0; i--){
         sujungtasZodis += raidesAtbulai[i];
         console.log (raidesAtbulai[i]);
-}
+};
 console.log(sujungtasZodis);
+
