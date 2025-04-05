@@ -80,14 +80,53 @@ let elementai1 = [2, 8, 'abc', -1, 'op', 9, 5, 'gg'];
     for (let i = elementai1.length - 1; i >= 0; i--) {
        console.log(elementai1[i]);
 }
-console.log('---------------10----------------');
+console.log('---------------10------------nezinau metodo----');
 // . Parašykite for ciklą, kuris išvestų į console tik tuos skaičius, jei jie yra pinigų reikšmės
 // (1, 2, 5, 10, 20, 50, 100, 200, 500)
 
-let skaiciai = [1, 2, 5, 10, 20, 50, 100, 200, 500];
-let piniguReiksmes = [];
-    for (let i = 0; i < skaiciai.length; i++) {
-        if (skaiciai === 1 || skaiciai === 2 || skaiciai === 5 )
-            piniguReiksmes += skaiciai[i];
-            console.log (skaiciai.indexOf(1, 0));
+let skaiciai = [1, 'op', 2, 2,  -5, 5, 10, true, 50, -200, 50, 20, 500, 200];
+    for (let i = 0; i <= 500; i++) {
+        if (skaiciai.includes(i))
+            console.log (i);
+    };
+
+    console.log('---------------11----------------');
+
+    // Parašykite for ciklą, kuris iš sąrašo Raidės [ ‘L’, ‘a’, ‘b’, ‘a’, ‘s’] sudėliotų kintamąjį
+    // Žodis, kurio reikšmė yra ‘Labas’
+let labas = ['L', 'a', 'b', 'a', 's']
+let zodisLabas = [];
+    for (let i = 0; i < labas.length; i++){
+        zodisLabas += labas[i];
     }
+    console.log(zodisLabas);
+
+console.log('---------------12----------------');
+
+// Parašykite for ciklą, kuris atskirai atspausdintų kiekvieną žodžio Programavimas
+// raidę.
+
+let programavimas = 'Programavimas';
+    for (let i = 0; i < programavimas.length; i++) {
+        console.log(programavimas[i]);
+    }
+
+console.log('---------------13----------------');
+// Parašykite for ciklą, kuris sudaugintų skaičius nuo 2 iki 10. Už ciklo išveskite į
+// consolę reikšmę
+let daugyba = 2;
+for (let i = 3; i < 10; i ++) {
+    daugyba = daugyba * i;
+    console.log(daugyba);
+    // console.log(3*4*5*6*7*8*9);
+}
+console.log('---------------14----------------');
+// . Parašykite for ciklą, kuris apskaičiuos visų nelyginių skaičių nuo 1 iki 30 sumą
+let nelyginiai = 0;
+for(i = 0; i < 30; i++) {
+    if (i % 2) {
+        nelyginiai += i;
+    }
+}
+console.log (nelyginiai);
+// console.log (1+3+5+7+9+11+13+15+17+19+21+23+25+27+29);
