@@ -70,5 +70,24 @@ let skaitiniaiElementai = [];
     suma += skaitiniaiElementai[i];
 }
 console.log(skaitiniaiElementai, suma);
-console.log('-----padarei klaida kad darei cikla (for), cikle(for)---');
+console.log('--padarei klaida kad darei cikla (for), cikle(for)-');
 
+// Parašykite for ciklą, kuris išvestų į console visus sąrašo elementus nuo paskutinio iki
+// pirmo
+console.log('---------------9----------------');
+
+let elementai1 = [2, 8, 'abc', -1, 'op', 9, 5, 'gg'];
+    for (let i = elementai1.length - 1; i >= 0; i--) {
+       console.log(elementai1[i]);
+}
+console.log('---------------10----------------');
+// . Parašykite for ciklą, kuris išvestų į console tik tuos skaičius, jei jie yra pinigų reikšmės
+// (1, 2, 5, 10, 20, 50, 100, 200, 500)
+
+let skaiciai = [1, 2, 5, 10, 20, 50, 100, 200, 500];
+let piniguReiksmes = [];
+    for (let i = 0; i < skaiciai.length; i++) {
+        if (skaiciai === 1 || skaiciai === 2 || skaiciai === 5 )
+            piniguReiksmes += skaiciai[i];
+            console.log (skaiciai.indexOf(1, 0));
+    }
