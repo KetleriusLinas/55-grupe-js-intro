@@ -191,3 +191,19 @@ let mazesniNeiSimtas = [2, 14, 10, 1000, 503, 8, 0, 120, 150, 5, 99, 101];
     }
 }
 console.log('---------------21----------------');
+// 21. Parašykite for ciklą, kuris apskaičiuotų kiek raidžių a yra žodyje abrakadabra
+
+let zodisAbra = 'abrakadabra';
+let aRaides = 0;
+    for (let i = 0; i < zodisAbra.length; i++) {
+        if (zodisAbra[i] === 'a') {
+            aRaides ++;
+        }
+        // console.log(zodisAbra[i]);
+    }
+    console.log('Zodis abrakadabra turi:', aRaides, 'a raides');
+
+    console.log('---------------22----------------');
+
+//     22. Parašykite for ciklą, kuris išvestų, kokios būtų sąrašo PridėsiuSkaičių [2, 8, 88, 14]
+// elementų reikšmės, jei prie kiekvieno elemento pridėtume dvejetą.
