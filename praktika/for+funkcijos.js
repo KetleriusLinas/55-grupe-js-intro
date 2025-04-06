@@ -149,3 +149,45 @@ let sujungtasZodis = [];
 };
 console.log(sujungtasZodis);
 
+console.log('---------------17----------------');
+// Parašykite for ciklą, kuris į console išvestų kintamojo ŽodisAtbulas =
+// ‘samivamargorP’ atskiras raides vieną po kitos
+
+let zodisAtbulas = 'samivamargorP';
+let zodisIsEiles = [];
+for (let i = zodisAtbulas.length - 1; i >= 0; i--) {
+    zodisIsEiles += zodisAtbulas[i];
+}
+console.log(zodisIsEiles); // uz for ciklo reikia isvedineti
+
+console.log('---------------18----------------');
+// . Parašykite for ciklą, kuris į consolę išveda skaičius nuo 1 iki 100. Jei skaičius dalinasi
+// iš 7, papildomai į consolę yra išvedamas žodis ‘lucky’
+
+for (let i = 1; i < 100; i++) {
+    if (i % 7 == 0)
+console.log(i,'lucky');
+console.log (i);
+}
+console.clear();
+console.log('---------------19----------------');
+
+// . Parašykite for ciklą, kuris į console po vieną atskirai išvestų dvigubas sąrašo
+// Dvigubinti [2, 3, 6, 8] reikšmes (Gaunamas atsakymas: 4, 6, 12, 16)
+
+let dvigubinamasSarasas = [2, 3, 6, 8];
+    for (let i = 0; i < dvigubinamasSarasas.length; i++) {
+        console.log(dvigubinamasSarasas[i] * 2);
+    };
+console.log('---------------20----------------');
+
+// Parašykite for ciklą, kuris iš sąrašo DaugSkaičių [2, 14, 10, 1000, 503, 8, 0] išvestų
+// visus skaičius, kurie yra mažesni už 100
+
+let mazesniNeiSimtas = [2, 14, 10, 1000, 503, 8, 0, 120, 150, 5, 99, 101];
+    for (let i = 0; i < mazesniNeiSimtas.length; i++) {
+        if (mazesniNeiSimtas[i] < 100) {
+            console.log(mazesniNeiSimtas[i]); 
+    }
+}
+console.log('---------------21----------------');
