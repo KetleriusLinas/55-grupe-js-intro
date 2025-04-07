@@ -29,7 +29,8 @@
         "if+array": "node --watch ./praktika/if+array.js",
         "uzduotys+if": "node --watch ./praktika/uzduotys+if.js",
         "uzduotys+funkcijos": "node --watch ./praktika/uzduotys+funkcijos.js",
-
+    
+        "names-split-join": "node --watch ./js/task/names-split-join.js",
         "money-format": "node --watch ./js/task/money-format.js",
         "valid-name": "node --watch ./js/task/valid-name.js",
         "biggestNumber": "node --watch ./js/task/biggestNumber.js",
