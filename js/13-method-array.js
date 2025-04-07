@@ -114,4 +114,35 @@ const texts = ['agurkas', 'pomidoras', 'svogunas', 'paprika'];
 const prduktai = `reikalingi prduktai: ${texts.join (', ')}`; // iterpia simbolius kuriuos idedi (. , !  .'') ir tt 
 console.log(prduktai);
 
-console.log('--------------join-------------');
+console.log('--------------reverse-------------');
+// apsukti rezultatus -- tik masyve. (masyva apsukti)
+
+console.log(texts);
+texts.reverse();
+console.log(texts);
+
+console.log('--------------concat-------------');
+// apjungti masyvus
+const c1 = [1, 11];
+const c2 = [2, 22];
+const c3 = [3, 33];
+const c4 = [4, 44];
+
+const c12 = c1.concat(c2); // 1 ir 2 sujungiam
+console.log(c12);
+
+const c34 = c3.concat(c4); // 3 ir 4 sujungiam
+console.log(c34);
+
+const c123 = c1.concat(c2).concat(c3); // 1 ir 2 ir 3 sujungiam --- galima kiek nori sujungineti.
+console.log(c123);
+
+const c1234 = c1.concat(c2, c3, c4);  // sujungineti galim ir taip visus sujungs is eiles
+console.log(c1234);
+
+const c111 = c1.concat(c1, c1); // galima ir tuos pacius masyvus apjungti kelis kartus ar net perpanaudoti naudotus
+console.log(c111);
+
+console.log('-------------splice-------------');
+
+
