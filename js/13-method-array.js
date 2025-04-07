@@ -144,5 +144,10 @@ const c111 = c1.concat(c1, c1); // galima ir tuos pacius masyvus apjungti kelis 
 console.log(c111);
 
 console.log('-------------splice-------------');
+// trina elementus is array nuo startines pozicijos iki end.
+const h = [11, 22, 33, 44, 55];
+console.log(h);
 
+h.splice(0, 2); // nurodome startine pozicijo nuo kurios nutrinti viska. jei parenkam kelis parametrus tai nutrins nuo pradzios iki pabaigos (0 ... 2) istrina nuo 0 iki 2.
+console.log(h);
 
