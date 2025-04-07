@@ -12,10 +12,10 @@
     -   ~~"paprasta"~~ - PRAEITA
     -   rodykline
     -   metodai:
-        -   string methods
-        -   number methods
-        -   Math biblioteka
-        -   array methods
+        -   ~~string methods~~
+        -   ~~number methods~~
+        -   ~~Math biblioteka~~
+        -   ~~array methods~~
         -   object methods
 -  #palyginimas:
     - ~~if~~ - PRAEITA
