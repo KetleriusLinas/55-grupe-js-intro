@@ -74,3 +74,44 @@ for (let i = 0; i < n2.length; i++ ) {
 }
 
 console.log(n12);
+
+console.log('----------------pop--------------')
+//isiema paskutinius array elemntus ir pastato juos i gala (desine) ir ji issaugo jei pasidarai kintamaji.
+const number2 = [ 10, 2, 8, 4, 6];
+console.log(number2);
+
+number2.push(9);
+console.log(number2);
+
+const g1 = number2.pop();
+const g2 = number2.pop();
+console.log(number2, g1, g2);
+console.log('-------------unshift--------------');
+// ikelia emelentus i prieki
+number2.unshift(1);
+number2.unshift(2);
+number2.unshift(3);
+console.log(number2);
+// isiema elementus is priekio >>. - nesu tikras
+const g3 = number2.shift();
+const g4 = number2.shift();
+console.log(number2, g3, g4);
+
+console.clear();
+console.log('--------------includes-------------');
+// ar egzistuoja sarase ta reiksme, arba ne. panasus methodai su string tipu, ir ju veikimo tipai.
+const magic = [11, 22, 33, 44, 55];
+console.log(magic.includes(5));
+console.log(magic.includes(55));
+console.log('--------------indexOf-------------');
+
+console.log(magic.indexOf(5)); // isveda -1 jei nera tokios reiksmes
+console.log(magic.indexOf(55)); // isveda 4 jei yra tokia reiksme
+console.log('--------------join-------------');
+
+const texts = ['agurkas', 'pomidoras', 'svogunas', 'paprika'];
+// reikia sukurti sakini, reikalingi prduktai:.
+const prduktai = `reikalingi prduktai: ${texts.join (', ')}`; // iterpia simbolius kuriuos idedi (. , !  .'') ir tt 
+console.log(prduktai);
+
+console.log('--------------join-------------');
