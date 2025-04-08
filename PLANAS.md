@@ -22,8 +22,8 @@
     - ~~ternary~~
     -   switch
 -   #ciklas:
-    -   for
-    -   while
+    -   ~~for~~
+    -   ~~while~~
     -  ~~ for-of ~~
     -   for-in
 -   #ivykiu stebejimas (event listeners)
