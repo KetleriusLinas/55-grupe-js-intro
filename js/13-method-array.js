@@ -151,3 +151,116 @@ console.log(h);
 h.splice(0, 2); // nurodome startine pozicijo nuo kurios nutrinti viska. jei parenkam kelis parametrus tai nutrins nuo pradzios iki pabaigos (0 ... 2) istrina nuo 0 iki 2.
 console.log(h);
 
+console.log('--------------MAP------skaiciai-----------');
+
+
+const k = [10, 2, 8, 4, 6]; // padauginti kiekviena nari * 2
+const k2 = [];
+
+// for'u pasidarius ---
+//  MAP // ciklas
+
+for (const n of k) {
+    k2.push(n * 2);
+}
+console.log(k2);
+
+// patrigubinti array su funkcija
+function triple (n) {
+    return n * 3;
+}
+// map - pasleptas ciklas
+const k3 = k.map(triple)
+console.log(k3);
+
+
+const quadro = n => n * 4;
+const k4 = k.map(quadro);
+console.log(k4);
+
+
+const k5 = k.map(n => n * 5);
+console.log(k5);
+
+// pasidare masyvo kopija
+const k6 = k.map(n => n);
+console.log(k6);
+
+const k7 = k.map(n => n + 1);
+console.log(k7);
+
+console.log('--------------MAP------tekstai-----------');
+
+const dict = ['pomidoras', 'agurkas', 'bulve'];
+const dict2 = dict.map(w => w[0]); // sukuria nauja masyva ir isveda pirmasias raides
+    console.log(dict2);
+    
+const dict3 = dict.map(w => w.length);
+    console.log(dict3); // sukuria masyva ir isveda ilgius zodiu
+
+const people = [
+    {name: 'Jonas', age: 99},
+    {name: 'Maryte', age: 88},
+    {name: 'Petras', age: 77},
+    {name: 'Ona', age: 66},
+];
+const people100 = people.map(person => `${person.name} liko ${100 - person.age} metai.`)
+// sukurtas naujas objectas person.
+
+
+ // sukurimas kiek liko metu iki 100
+// [
+//     'Jonas liko 1 metai.',
+//     'Maryte liko 12 metai.',
+// ]
+
+console.log(people100);
+
+
+const peopleNames = people.map(person => person.name);
+console.log(peopleNames);
+
+const peopleAge = people.map(person => person.age);
+console.log(peopleAge);
+
+
+// norit prideti i tokia paprasta rodykline funkcija, ja reikia isskleisti. 
+const peopleMarried = people.map(person => {
+    person.isMarried = true;
+    person.luckyNumbers = 13;
+    return person; 
+});
+console.log(peopleMarried);
+
+console.log('--------------Filter-----------');
+// FILTER
+
+const p = [10, 2, 8, 4, 6];
+const p5 = [];
+
+// ipushini jei skaiciai didesni nei 5
+for (const n of p) {
+    if (n > 5) {
+        p5.push(n)
+    }
+}
+console.log(p5);
+
+// filteris ciklas, pasiema kiekviena nari ir ji execute'ina.. 
+//pasiema didesnius skaicius nei 6.
+const p6 = p.filter(n => n > 6); // prafiltravo, pasieme tuos skaicius kurie tenina salyga
+console.log(p6);
+
+const p7 = p.filter( n => n < 7);
+console.log(p7);
+
+const p8 = p.filter( n => n > 2 && n < 8); // n => funkcija
+console.log(p8);
+
+const texts5 = ['labas', '', 'rytas', '', 'Lietuva'];
+const texts5Updated = texts5.filter(t => t.length > 0); // isvede tekstus kurie daugiau nei 0
+const texts5Updated2 = texts5.filter(t => t); // isveda irgi teksta nes "pozityvus tekstas"
+// tuscias negatyvus -- bet nenaudoti taip, tik zinoti gerai
+console.log(texts5Updated);
+console.log(texts5Updated2);
+
