@@ -19,7 +19,7 @@
         -   object methods
 -  #palyginimas:
     - ~~if~~ - PRAEITA
-    -   ternary
+    - ~~ternary~~
     -   switch
 -   #ciklas:
     -   for
