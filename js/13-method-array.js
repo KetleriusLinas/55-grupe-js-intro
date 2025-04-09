@@ -308,13 +308,4 @@ console.log(allTreesNameSize51);
 const allTreesNameSize10 = trees.some(s => s.length === 10); // false , nei vienas nera lygus 10
 console.log(allTreesNameSize10);
 
-console.log('-----------------sort-------------------');
-// sort
-
-
-
-
-
-
-// reduce
 

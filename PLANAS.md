@@ -10,12 +10,12 @@
     -   ~~undefined~~ - PRAEITA (reiksme neegzistuoja, kai kreipiesi i atminti ir joje nera duomens)
 -   #funkcijos (perpanaudojamas kodo blokas/logika):
     -   ~~"paprasta"~~ - PRAEITA
-    -   rodykline
+    -   ~~rodykline~~
     -   metodai:
         -   ~~string methods~~
         -   ~~number methods~~
         -   ~~Math biblioteka~~
-        -   array methods
+        -   ~~array methods~~
         -   object methods
 -  #palyginimas:
     - ~~if~~ - PRAEITA
