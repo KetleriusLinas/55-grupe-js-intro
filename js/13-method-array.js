@@ -288,16 +288,22 @@ demo.fill(777); // overaitina masyva ir pakeicia sena reiksme nauja. Bet dazniau
 console.log(demo)
 
 console.log('-----------------every-------------------');
-// every -- kiekvienas
+// every -- kiekvienas. jei visi tenkina salyga tada true, jei bent vienas netenkina tuomet false.
 
 const trees = ['uosis', 'egle', 'azuolas', 'tuopa'];
 const allTreesValid = trees.every(s => s.length > 0)
 console.log(allTreesValid);
 
-const allTreesNameSize5 = trees.every(s => s.length === 5);
+const allTreesNameSize5 = trees.every(s => s.length === 5); // arba visi tenkina, jei nors vienas netenkina vadinas visi netenkina salygos.
 console.log(false);
 
+console.log('-----------------some-------------------');
+//some - bent vienas. jei bent vienas tenkina salyga tuomet true.
 
+const allTreesValid1 = trees.every(s => s.length > 0)
+console.log(allTreesValid1);
+const allTreesNameSize51 = trees.every(s => s.length === 5);
+console.log(allTreesNameSize51);
 
 // sort
 // reduce
