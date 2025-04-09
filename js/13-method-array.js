@@ -264,3 +264,41 @@ const texts5Updated2 = texts5.filter(t => t); // isveda irgi teksta nes "pozityv
 console.log(texts5Updated);
 console.log(texts5Updated2);
 
+console.clear();
+
+console.log('-------------------fill-----------------');
+// fill
+const default5 = [0, 0, 0, 0, 0]; // visos masyvo reiksmes turi buti vienodos
+const default7 = Array(7).fill(99); // array su 7 pozicijom jau (Array(7)). fill(99), uzpilde array viena reiksme
+console.log(default7);
+
+const zeros1 = Array(10); // sukuria masyva su tinkamu kiekiu poziciju
+const zeros = Array(10).fill('abc'); // uzpildo masyva pasirinkta reiksme
+console.log(zeros);
+
+const negatives = Array(8).fill(false);
+console.log(negatives);
+
+const emptySpaces = Array(5).fill('');
+console.log(emptySpaces);
+
+const demo = [10, 2, 4, 6, 8];
+console.log(demo);
+demo.fill(777); // overaitina masyva ir pakeicia sena reiksme nauja. Bet dazniausiai naudojamas naujam masyvui.
+console.log(demo)
+
+console.log('-----------------every-------------------');
+// every -- kiekvienas
+
+const trees = ['uosis', 'egle', 'azuolas', 'tuopa'];
+const allTreesValid = trees.every(s => s.length > 0)
+console.log(allTreesValid);
+
+const allTreesNameSize5 = trees.every(s => s.length === 5);
+console.log(false);
+
+
+
+// sort
+// reduce
+

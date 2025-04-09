@@ -15,7 +15,7 @@
         -   ~~string methods~~
         -   ~~number methods~~
         -   ~~Math biblioteka~~
-        -   ~~array methods~~
+        -   array methods
         -   object methods
 -  #palyginimas:
     - ~~if~~ - PRAEITA
