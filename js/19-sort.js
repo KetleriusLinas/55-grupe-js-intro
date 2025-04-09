@@ -47,3 +47,5 @@ console.log(people);
 //                  abeceleje lygina tekstus       
 people.sort((a, b) => a.name > b.name ? 1 : a.name === b.name ? 0 : -1); // palyginom ar yra vienodu vardu.
 console.log(people);
+
+// jei butu true , false reiksmes-- pradzioj sudetu false paskui true.
