@@ -298,13 +298,23 @@ const allTreesNameSize5 = trees.every(s => s.length === 5); // arba visi tenkina
 console.log(false);
 
 console.log('-----------------some-------------------');
-//some - bent vienas. jei bent vienas tenkina salyga tuomet true.
+//some - bent vienas. jei bent vienas tenkina salyga tuomet true. false jei nei vienas netenkina.
 
-const allTreesValid1 = trees.every(s => s.length > 0)
+const allTreesValid1 = trees.some(s => s.length > 0) // true
 console.log(allTreesValid1);
-const allTreesNameSize51 = trees.every(s => s.length === 5);
+const allTreesNameSize51 = trees.some(s => s.length === 5); // true
 console.log(allTreesNameSize51);
 
+const allTreesNameSize10 = trees.some(s => s.length === 10); // false , nei vienas nera lygus 10
+console.log(allTreesNameSize10);
+
+console.log('-----------------sort-------------------');
 // sort
+
+
+
+
+
+
 // reduce
 
