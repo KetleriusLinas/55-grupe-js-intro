@@ -98,3 +98,219 @@ function greet(name){
 }
 console.log(greet('Vilma'));
 console.log(greet('Johnny'));
+
+console.log('----------find the difference in age---------');
+console.log('----------su destytoja---------');
+
+function differenceInAges(ages){
+  let min = Infinity;
+  let max = -Infinity;
+for (let i = 0; i < ages.length; i ++) {
+  if (ages[i] < min) {
+    min = ages[i];
+  }
+  if (ages[i] > max) {
+    max = ages[i];
+  }
+}
+let dif = max - min;
+  return [min, max, dif];
+}
+
+console.log(differenceInAges([82, 15, 6, 38, 35]), [6, 82, 76]);
+console.log(differenceInAges([57, 99, 14, 32]), [14, 99, 85]);
+
+console.log('----------find the difference in age---------');
+function differenceInAges (ages) {
+
+  let max = Math.max(...ages),
+      min = Math.min(...ages)
+      diff = max - min
+      
+  return [min, max, diff]
+};
+
+console.log('--------Keep hydrated-----------');
+console.log('----------su destytoja---------');
+
+function litres(time) {
+  return Math.floor(time * 0.5);
+}
+console.log(Math.floor(1.6));
+
+console.log(litres(0));
+console.log(litres(1));
+console.log(litres(2));
+console.log(litres(3));
+console.log(litres(4));
+
+console.log('--------calculate- testine kata----------');
+console.log('----------su destytoja---------');
+
+function magNumber(info) {
+  let mag = 0;
+  if(info[0] === 'PT92') {
+    mag = Math.ceil ((3 * info[1]) / 17)
+  }
+  if(info[0] === 'M4A1' || info[0] === 'M16A2') {
+    mag = Math.ceil ((3 * info[1]) / 30)
+  }
+  if(info[0] === 'PSG1') {
+    mag = Math.ceil ((3 * info[1]) / 30)
+  }
+  return mag;
+}
+
+console.log(magNumber(5));
+console.log('--------calculate- BMI----------');
+console.log('----------su destytoja---------');
+
+
+function bmi(weight, height) {
+  let result = '';
+  if (weight / (height ** 2) <= 18.5){
+    result = 'Underweight';
+  }
+   else if(weight / (height ** 2) <= 25.0) {
+    result = 'Normal';
+ } else if (weight / (height ** 2) <= 30.0) {
+    result = 'Overweight';
+ } else  {
+    result = 'Obese'
+ }
+ return result;
+}
+
+console.log(bmi(50, 1.80));
+console.log(bmi(80, 1.80));
+console.log(bmi(90, 1.80));
+console.log(bmi(100, 1.80));
+
+console.log('--------calculate- BMI----------');
+console.log('----------kitoks kodas---------');
+
+// const bmi = (w, h, bmi = w/h/h) =>  bmi <= 18.5 ? "Underweight" :
+//                                     bmi <= 25 ? "Normal" :
+//                                     bmi <= 30 ? "Overweight" : "Obese";
+
+console.log('--------Function 2 - squaring an argument----------');
+console.log('----------su destytoja---------');
+
+// function square(num) {
+//   return num * num;
+// }
+// console.log(square(5));
+
+console.log('-------------------');
+
+const square = num => num * num;
+console.log(square(5));
+
+// let current = '';
+// function 
+// if (current === green)
+
+function updateLight(current) {
+  // let current = '';
+  if (current === 'green') {
+    return 'yellow';
+  } if (current === 'yellow') {
+    return 'red';
+  }   if (current === 'red') {
+    return 'green';
+  }
+}
+  console.log(updateLight('green'));
+  console.log(updateLight('yellow'));
+  console.log(updateLight('red'));
+
+  console.log('----------neismasciau---------');
+
+
+function multiTable(number) {
+  let result = '';
+  for (let i = 1; i <= 10; i++){ 
+      result += `${i} * ${number} = ${i * number}\n`;
+ }  
+  return result.trim();
+}
+console.log(multiTable(5));
+console.log(multiTable(1));
+
+console.clear();
+
+function digitize(n) {
+  let result = [];
+  let str = n.toString();
+
+  for (let i = 0; i < str.length; i++) {
+    result.push(Number(str[i]));
+    }
+  return result.reverse();
+}
+
+function digitize(n) {
+  return String(n).split('').map(Number).reverse();// va kaip turejo but
+}
+console.log(digitize(35231), '--->', 13253);
+console.log(digitize(0), '--->', 0);
+console.log(digitize(12345), '--->', 54321);
+
+
+// const n1 = [1, 11, 111];
+// const n2 = [2, 22, 222, 2222];
+// const n12 = [];
+
+// for (let i = 0; i < n1.length; i++ ) {
+//     n12.push(n1[i]);
+
+function myFirstKata(a, b) {
+  if (typeof(a) === "number" && typeof(b) === "number") {
+   return a % b + b % a;
+  } else {
+     return false;
+  }
+}
+
+console.log(myFirstKata(3, 5));
+console.log(myFirstKata('hello', 5));
+console.log(myFirstKata(67, 105));
+console.log('---------------Neisprendziu!!!------------------');
+
+// const getDrinkByProfession = (param) => name.toLowerCase();
+// const getDrink = (parametras) => parametras.toLowerCase();
+
+function getDrinkByProfession (param) {
+     
+const getDrink = (param) => {
+  return param.toLowerCase();
+}
+const profession = getDrink(param);
+
+     if (param === 'Jabroni') {
+      return 'Patron Tequila';
+     } 
+     else if (param === 'School Counselor') {
+      return 'Anything with Alcohol';
+     } 
+     if (param === 'Programmer') {
+      return 'Hipster Craft Beer';
+     } 
+     if (param === 'Bike Gang Member') {
+      return 'Moonshine';
+     } 
+     if (param === 'Politician') {
+      return 'Your tax dollars';
+     } 
+     if (param === 'Rapper') {
+      return 'Cristal';
+     } 
+     else {
+      return 'Beer';
+     } 
+    
+}
+console.log(getDrinkByProfession('Jabroni'));
+console.log(getDrinkByProfession('Programmer'));
+console.log(getDrinkByProfession('ProGgrsSamGmer'));
+// console.log(getDrink('abSroSni'));
