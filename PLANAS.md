@@ -16,7 +16,7 @@
         -   ~~number methods~~
         -   ~~Math biblioteka~~
         -   ~~array methods~~
-        -   object methods
+        -   ~~object methods~~
 -  #palyginimas:
     - ~~if~~ - PRAEITA
     - ~~ternary~~
