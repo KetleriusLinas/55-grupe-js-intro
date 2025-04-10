@@ -197,7 +197,48 @@ for (const numberList of numbers) {
     console.log(result);
     
 }
-
 // for (let i = 0; i < numbers.length, i++) {
-
 // }
+console.log();
+console.log('----------destrukturizavimo trecia dalis-------------');
+
+// Math.min(1);
+// Math.min(1, 2, 3, 4);
+
+// min radimo funkcija
+// kaip array ieskom maziausio
+
+//[1, 2, 3] --> {}
+function min (...list) { // ... list surenka visas nepanaudotas reiksmes
+    // console.log(list);
+    let minimum = Infinity;
+
+    for (const number of list) {
+        if (number < minimum) {
+            minimum = number;
+        }
+    }
+
+    return list[0];
+}
+
+console.log(min(1));
+console.log(min(1, 2, 3));
+console.log(min(-1, -2, -3));
+console.log(min(-1, -2, -3, -2, -3, -2, 3));
+
+// irgi veikia be funkcijos
+// console.log(Math.min(1));
+// console.log(Math.min(1, 2, 3));
+// console.log(Math.min(-1, -2, -3));
+// console.log(Math.min(-1, -2, -3, -2, -3, -2, 3));
+console.log();
+
+const ddd = [1, 2, 3];
+console.log(Math.min(...ddd));
+console.log(Math.max(...ddd));
+
+// (...) ir destrukturyzavimas, spread ir dar ....
+// ...ddd = 1, 2, 3
+const f = [...ddd];
+console.log(f);
