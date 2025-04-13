@@ -340,19 +340,51 @@ console.log(solution('U', 'False'));
 
 
 
-function magNumber(info){
-  if (info[0] === "PT92") {
-      return  Math.ceil((3 * info[1]) / 17)
-    }
-  if (info[0] === "M4A1"){
-      return Math.ceil((3 * info[1]) / 30)
-    }
-  if (info[0] === "M16A2"){
-      return Math.ceil((3 * info[1]) / 30)
-    }
-  if (info[0] === "PSG1"){
-      return Math.ceil((3 * info[1]) / 5)
-    }
+// function magNumber(info){
+//   if (info[0] === "PT92") {
+//       return  Math.ceil((3 * info[1]) / 17)
+//     }
+//   if (info[0] === "M4A1"){
+//       return Math.ceil((3 * info[1]) / 30)
+//     }
+//   if (info[0] === "M16A2"){
+//       return Math.ceil((3 * info[1]) / 30)
+//     }
+//   if (info[0] === "PSG1"){
+//       return Math.ceil((3 * info[1]) / 5)
+//     }
+// }
+
+
+function sumArray(array) {
+  // Input validation: Check if the array is valid and has at least 3 elements
+  if (!Array.isArray(array) || array.length <= 2) {
+    return 0; // return 0 if the array is invalid or too short
+  }
+
+  const min = Math.min(...array);
+  const max = Math.max(...array);
+
+  const indexMin = array.indexOf(min);
+  const indexMax = array.indexOf(max);
+
+  // Remove the smallest value
+  array.splice(indexMin, 1);
+
+  // After removing the smallest element, the index of max might change, so we re-check the max index
+  const indexMaxAdjusted = array.indexOf(max);
+
+  // Remove the largest value
+  array.splice(indexMaxAdjusted, 1);
+
+  // Now sum the remaining elements
+  const sum = array.reduce((acc, val) => acc + val, 0);
+
+  return sum;
 }
 
-console.log(magNumber(10))
+console.log(sumArray([2, 4, 6 ,8]));
+console.log(sumArray([6, 2, 1, 8, 10]));
+console.log(sumArray([ -6, -20, -1, -10, -12 ]));
+console.log(sumArray(null));
+console.log(sumArray([]));
