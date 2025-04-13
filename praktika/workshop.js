@@ -337,3 +337,22 @@ console.log(solution('45', '1'));
 console.log(solution('13', '200'));
 console.log(solution('Soon', 'Me'));
 console.log(solution('U', 'False'));
+
+
+
+function magNumber(info){
+  if (info[0] === "PT92") {
+      return  Math.ceil((3 * info[1]) / 17)
+    }
+  if (info[0] === "M4A1"){
+      return Math.ceil((3 * info[1]) / 30)
+    }
+  if (info[0] === "M16A2"){
+      return Math.ceil((3 * info[1]) / 30)
+    }
+  if (info[0] === "PSG1"){
+      return Math.ceil((3 * info[1]) / 5)
+    }
+}
+
+console.log(magNumber(10))
