@@ -28,6 +28,7 @@
         "string": "node --watch ./js/2-string.js",
         "number": "node --watch ./js/1-number.js",
 
+        "tekstoManipuliacijos": "node --watch ./praktika/tekstoManipuliacijos.js",
         "for+funkcijos": "node --watch ./praktika/for+funkcijos.js",
         "funkcijos+for2": "node --watch ./praktika/funkcijos+for2.js",
         "funkcijos+for": "node --watch ./praktika/funkcijos+for.js",

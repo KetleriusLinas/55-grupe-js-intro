@@ -362,8 +362,8 @@ function sumArray(array) {
     return 0; // return 0 if the array is invalid or too short
   }
 
-  const min = Math.min(...array);
-  const max = Math.max(...array);
+  const min = Math.min(...array); // suranda maziausia
+  const max = Math.max(...array); // suranda didziausia
 
   const indexMin = array.indexOf(min);
   const indexMax = array.indexOf(max);
