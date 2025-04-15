@@ -92,20 +92,21 @@ console.log(onlyLetters('Apelsinas1234!stai ir obuolys'));
 // 9. Find the longest word in a sentence
 console.log('-----kazkas neveikia------');
 
-// function longestWord (sentence) {
-//     const zodziai = sentence.split(' ');
-//     let maxLength = 0;
-//     let zodziaiMax = '';
-//         for (zodis in zodziai) {
-//             zodziai[zodzis] = zodziai[zodis].replace(/[^a-zA-Z]/g, '')
-//             if (zodziai[zodis].length > maxLength) {
-//                 zodziaiMax = zodziai[zodis];
-//                 zodziaiMax = zodziai[zodis].length;
-//             }
-//         }
-//         return zodziaiMax;
-// }
-// console.log(longestWord('labas rytas Lietuva, as Latvis, ka tu?'));
+function longestWord (sentence) {
+    const zodziai = sentence.split(' ');
+    let maxLength = 0;
+    let zodziaiMax = '';
+        for (let zodis in zodziai) {
+            zodziai[zodis] = zodziai[zodis].replace(/[^a-zA-Z]/g, '')
+            if (zodziai[zodis].length > maxLength) {
+                zodziaiMax = zodziai[zodis];
+                maxLength = zodziai[zodis].length;
+            }
+        }
+        return zodziaiMax + ' ' + maxLength;
+}
+console.log(longestWord('Labas Lietuva, kaip tau sekasi?'));
+console.log('-----kazkas neveikia------');
 
 
 // 11. Replace all vowels in a strng with '*'
