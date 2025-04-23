@@ -256,7 +256,7 @@ console.log('duona'.split('u')); // d..ona
 console.log('duona'.split('d')); // ' '...uona  --- skelia per d ir po kaire nebelieka teksto
 console.log('duona'.split('n'));
 
-// irasykite praleistas raides... (PROJEKTAS) ??? tik mintis
+// vaiku knygute ! irasykite praleistas raides... (PROJEKTAS) ??? tik mintis
 console.log('ana'.split('a')); //''...'n'...''
 
 console.log('vasara'.split('a')); // 

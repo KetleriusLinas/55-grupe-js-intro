@@ -64,3 +64,4 @@ console.log (stringReverse());
     }
     return result;
 }
+console.log (stringReverse(['abc', 'efre']));

@@ -137,3 +137,18 @@ function wordCount(sentece) {
 console.log(wordCount('ka tu vabale vienas du trys'));
 
 // 17. Repeat a string n times 
+
+function toCamelCase (str) {
+    const words = str.split(' '); //atskiriame zodzius
+    let cCase = '';
+    for (let i = 0; i < words.length; i++) {
+        if (i === 0) {
+            cCase += words[i].toLowerCase();
+        } else {
+            cCase += words[i].charAt(0).toUpperCase(); // zodzio pirmoji raide padaroma didzioji
+            cCase += words[i].slice(1).toLowerCase(); // sliceinam nuo antros raides ir visas likusias keiciam mazosiom raidem
+        }
+        return cCase;
+    }
+}
+console.log(toCamelCase('vienas is js isrbas'));

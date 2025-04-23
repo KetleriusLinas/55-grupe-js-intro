@@ -62,8 +62,7 @@ const reverseString  = text => text.split('').reverse().join('');
 // su split pasivertem i masyva (ir tuomet galima reverse, su array methodu)
 //     return text.split('').reverse().join(''); 
 // }
-
 console.log(reverseString('labas'));
 console.log(reverseString('kedes'));
 console.log(reverseString('sula'));
-console.log('--------------------------------------');
+
