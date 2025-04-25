@@ -87,9 +87,9 @@ function addItem(category, name, quantity, threshold = 5) {
     }
     else {
     inventory[category][name] = {quantity, threshold};
-    };
+    }
     logTransactions('ADD', category, name, quantity);
-};
+}
 
 function removeItem(category, name, quantity) {
     let item;
@@ -160,3 +160,24 @@ console.log(arr1.pop());
 console.log(arr2.unshift(arr1.pop()));
 console.log(arr2);
 
+// atsiskaitymas is js ka jau praejom. testas (pirmadieni, antradieni)
+
+console.log('-----pirmas skaicius dalinantis is 7------');
+
+function pirmasDalinasiIs7 (m) {
+    return m.find(x => x % 7 === 0)
+}
+console.log(pirmasDalinasiIs7([1, 2, 21]));
+
+console.log('-----------');
+
+function vardaiSuA(vardai) {
+    return vardai.filter(v => v.startsWith('A'));
+}
+console.log(vardaiSuA(['Tomas', 'Andrius', 'Auguste']));
+
+console.log('-----------');
+
+// function rastiPasikartojanti(masyvas) {
+//     for
+// }
