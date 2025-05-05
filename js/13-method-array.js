@@ -106,7 +106,7 @@ console.log(magic.includes(55));
 console.log('--------------indexOf-------------');
 
 console.log(magic.indexOf(5)); // isveda -1 jei nera tokios reiksmes
-console.log(magic.indexOf(55)); // isveda 4 jei yra tokia reiksme
+console.log(magic.indexOf(55)); // isveda indexo vieta. 4
 console.log('--------------join-------------');
 
 const texts = ['agurkas', 'pomidoras', 'svogunas', 'paprika'];

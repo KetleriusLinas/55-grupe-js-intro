@@ -5,6 +5,7 @@
     "main": "index.js",
     "scripts": {
 
+        "testas": "node --watch ./js/testas.js",
         "switch": "node --watch ./js/22-switch.js",
         "rest": "node --watch ./js/21-destrukturizavimas-rest.js",
         "reduce": "node --watch ./js/20-reduce.js",
@@ -40,6 +41,8 @@
         "if+array": "node --watch ./praktika/if+array.js",
         "uzduotys+if": "node --watch ./praktika/uzduotys+if.js",
         "uzduotys+funkcijos": "node --watch ./praktika/uzduotys+funkcijos.js",
+        "kartojimas1": "node --watch ./praktika/jsKartojimas.js",
+
 
         "fancy-math": "node --watch ./js/task/fancy-math.js",
         "names-split-join": "node --watch ./js/task/names-split-join.js",

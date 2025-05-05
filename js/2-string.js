@@ -7,7 +7,7 @@ Tekstines reiksmes iniciavimas:
  - let k = 0;
 k = k +1;
 k += 1;
-k++; // kada padidints priies panaudojima ar po
+k++; // kada padidints pries panaudojima ar po
 ++k; // po panaudojimo
 
 
@@ -69,7 +69,7 @@ console.clear();
 
 
 
-{/* < header >
+/* < header >
     <img>
         <nav>
             <a></a>
@@ -80,7 +80,7 @@ console.clear();
 
 
 console.log();
- */}
+ */
 
 
 // Vienaguba (') kabute. - backtikas
