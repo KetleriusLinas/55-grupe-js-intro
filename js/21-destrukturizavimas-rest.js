@@ -240,5 +240,6 @@ console.log(Math.max(...ddd));
 
 // (...) ir destrukturyzavimas, spread ir dar ....
 // ...ddd = 1, 2, 3
+
 const f = [...ddd];
 console.log(f);
